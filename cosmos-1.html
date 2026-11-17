@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>COSMOS — Путешествие по Вселенной</title>
+<style>
+:root{--bg:#070b1b;--panel:rgba(18,25,55,.72);--text:#f5f6ff;--muted:#b8c0e2;--accent:#9b8cff;--cyan:#63dcff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(ellipse at 20% 10%,#24205a 0,transparent 35%),radial-gradient(ellipse at 85% 35%,#102e55 0,transparent 32%),var(--bg);overflow-x:hidden}
+.stars,.stars:after{position:fixed;inset:0;content:"";pointer-events:none;background-image:radial-gradient(2px 2px at 20px 30px,#fff 60%,transparent),radial-gradient(1px 1px at 90px 80px,#b8d8ff 60%,transparent),radial-gradient(1px 1px at 150px 140px,#fff 60%,transparent),radial-gradient(2px 2px at 220px 50px,#c9bfff 60%,transparent);background-size:260px 190px;opacity:.45;animation:drift 80s linear infinite}.stars:after{transform:translate(100px,80px);opacity:.35}@keyframes drift{to{transform:translateY(-190px)}}
+nav{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;padding:22px 8%;border-bottom:1px solid #ffffff18;backdrop-filter:blur(12px)}.logo{font-weight:900;letter-spacing:4px;font-size:22px}.logo span{color:var(--cyan)}nav a{color:var(--muted);text-decoration:none;margin-left:25px;font-size:14px}nav a:hover{color:white}
+.hero{position:relative;z-index:1;min-height:76vh;display:grid;place-items:center;text-align:center;padding:80px 20px}.eyebrow{color:var(--cyan);letter-spacing:4px;text-transform:uppercase;font-size:12px}.hero h1{font-size:clamp(48px,10vw,100px);line-height:.98;margin:18px 0;background:linear-gradient(100deg,#fff,#b7b0ff 55%,#6fe4ff);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:-4px}.hero p{max-width:610px;color:var(--muted);font-size:18px;line-height:1.7;margin:20px auto 30px}.btn{display:inline-block;border:0;border-radius:999px;padding:14px 25px;background:linear-gradient(100deg,#8e7cff,#4ccff4);color:#080d20;font-weight:800;text-decoration:none;cursor:pointer;box-shadow:0 8px 35px #6c78ff44}.planet{width:180px;height:180px;border-radius:50%;margin:45px auto 0;background:radial-gradient(circle at 30% 25%,#fff5d4 0,#ffbd89 8%,#b46bca 34%,#342b83 65%,#111735 100%);box-shadow:inset -25px -20px 45px #05091b,0 0 65px #9d8cff66;position:relative}.planet:after{content:"";position:absolute;width:245px;height:55px;border:8px solid #b9b5ff99;border-left-color:#d9d7ff;border-right-color:#7168c9;border-radius:50%;top:62px;left:-40px;transform:rotate(-17deg)}
+section{position:relative;z-index:1;padding:65px 8%;max-width:1250px;margin:auto}.section-title{text-align:center;font-size:clamp(28px,5vw,44px);margin:0 0 12px}.sub{text-align:center;color:var(--muted);margin:0 auto 35px;max-width:600px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--panel);border:1px solid #ffffff18;border-radius:22px;padding:25px;backdrop-filter:blur(14px);transition:.25s}.card:hover{transform:translateY(-6px);border-color:#9b8cff88}.orb{height:105px;display:grid;place-items:center;font-size:62px;filter:drop-shadow(0 0 18px #8e7cff88)}.card h3{margin:12px 0 8px}.card p{color:var(--muted);line-height:1.6;margin:0}.fact{max-width:800px;margin:20px auto 0;text-align:center;background:var(--panel);border:1px solid #ffffff22;padding:30px;border-radius:22px}.fact p{color:var(--muted);font-size:18px;line-height:1.7;min-height:55px}.fact button{margin-top:10px}.footer{text-align:center;padding:35px 15px;color:#8790b5;border-top:1px solid #ffffff18;font-size:13px}
+@media(max-width:760px){nav{padding:18px 5%}nav a{margin-left:12px;font-size:12px}.cards{grid-template-columns:1fr}.hero{min-height:70vh}.hero p{font-size:16px}.planet{width:145px;height:145px}.planet:after{width:200px;left:-34px;top:48px}}
+</style>
+</head>
+<body>
+<div class="stars"></div>
+<nav><div class="logo">COS<span>MO</span>S</div><div><a href="#planets">Планеты</a><a href="#facts">Факты</a></div></nav>
+<header class="hero"><div><div class="eyebrow">Исследуй неизвестное</div><h1>ТВОЯ ВСЕЛЕННАЯ</h1><p>Отправляйся в небольшое путешествие по космосу. Открой удивительные миры, далёкие планеты и тайны Вселенной.</p><a class="btn" href="#planets">Начать путешествие</a><div class="planet" aria-label="Иллюстрация фантастической планеты"></div></div></header>
+<section id="planets"><h2 class="section-title">Миры нашей системы</h2><p class="sub">Три удивительные планеты, с которых можно начать знакомство с космосом.</p><div class="cards">
+<article class="card"><div class="orb">🔴</div><h3>Марс</h3><p>Красная планета с огромными вулканами, древними долинами и тонкой атмосферой.</p></article>
+<article class="card"><div class="orb">🪐</div><h3>Сатурн</h3><p>Газовый гигант, знаменитый своими яркими кольцами из льда и каменных частиц.</p></article>
+<article class="card"><div class="orb">🔵</div><h3>Нептун</h3><p>Холодный далёкий мир, где дуют одни из самых быстрых ветров в Солнечной системе.</p></article>
+</div></section>
+<section id="facts"><h2 class="section-title">Космический факт</h2><p class="sub">Нажми на кнопку — и узнай кое-что интересное.</p><div class="fact"><div style="font-size:38px">✨</div><p id="factText">В космосе есть галактики, в которых находятся миллиарды звёзд.</p><button class="btn" id="nextFact">Следующий факт</button></div></section>
+<footer class="footer">COSMOS · Маленький сайт о бесконечной Вселенной</footer>
+<script>
+const facts=["Свет от Солнца достигает Земли примерно за 8 минут 20 секунд.","На Венере один оборот вокруг своей оси длится дольше, чем её год.","Юпитер — самая большая планета Солнечной системы.","Следы на Луне могут сохраняться очень долго: там почти нет ветра и дождя.","В космосе звук не распространяется так, как в воздухе на Земле."];
+let index=0;document.getElementById('nextFact').addEventListener('click',()=>{index=(index+1)%facts.length;document.getElementById('factText').textContent=facts[index]});
+</script>
+</body></html>
